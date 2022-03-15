@@ -1,0 +1,370 @@
+header {
+  text-align: center;
+}
+
+th,
+td {
+  padding: 15px;
+}
+
+select {
+  padding: 2px 15px;
+  background-color: rgb(181, 222, 255);
+  font-weight: 600;
+  padding: 5px 0;
+}
+
+select option {
+  font-size: 11px;
+}
+
+.innerControls input {
+  font-weight: normal;
+  float: right;
+}
+
+.innerControls.permalink {
+  display: inline-block;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #ddd;
+    background-color: #111;
+  }
+
+  button,
+  optgroup,
+  select {
+    background-color: rgb(0, 40, 70);
+  }
+
+  input,
+  textarea {
+    background-color: #222;
+  }
+
+  label {
+    font-weight: initial;
+  }
+
+  a {
+    color: #337ab7;
+  }
+
+  pre {
+    background-color: #050505;
+    border-color: #333;
+    color: #ccc;
+  }
+
+  .ace-github {
+    background: #000;
+    color: #fff;
+  }
+
+  .ace-github .ace_gutter {
+    background: #181818;
+    color: #888;
+  }
+
+  .ace-github .ace_marker-layer .ace_active-line {
+    background: #111;
+  }
+
+  .ace-github.ace_focus .ace_marker-layer .ace_active-line {
+    background: #321;
+  }
+
+  div.config-editor-commands {
+    background-color: #444;
+    border-color: #333;
+  }
+
+  button.btn {
+    color: #050505;
+  }
+
+  canvas {
+    background: #bbb;
+  }
+}
+
+#controls {
+  /* display: flex;
+  flex-direction: column; */
+  /* width: 80%; */
+  /* max-width: 2000px; */
+  margin: 0 auto 20px auto;
+  /* border: 1px solid #606060; */
+  overflow: hidden;
+}
+
+.icons {
+  width: 180px;
+  padding: 10px 0 0 10px;
+}
+
+.demo-controls-wrapper {
+  display: flex;
+  /* flex: 1 1 auto; */
+  width: 80%;
+  margin: 0 auto 0 auto;
+  padding: 5px 5px 0 3px;
+  /* border: 1px solid #606060; */
+}
+
+.radio-buttons-wrapper {
+  display: flex;
+  /* flex: 1 1 auto; */
+  width: 33%;
+  margin: 0 auto 20px auto;
+  padding: 5px 5px 0 3px;
+  visibility: hidden;
+  /* justify-content: center; */
+  /* border: 1px solid #606060; */
+}
+
+.radio-button {
+  width: 100px;
+}
+
+.radio-text {
+  font-size: 10pt;
+  font-weight: bolder;
+}
+
+.config-editor-wrapper {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  border-top: solid 1px #ccc;
+  height: 256px;
+}
+
+.config-editor-container {
+  flex: 1 1 auto;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#config-editor {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.config-editor-commands {
+  flex: 1 1 auto;
+  background-color: #ddd;
+  border-top: solid 1px #ccc;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.config-editor-commands label {
+  margin-bottom: 0;
+}
+
+.config-editor-commands button {
+  padding: 5px 8px;
+  font-size: 14px;
+}
+
+.innerControls {
+  /* display: flex; */
+  width: 300px;
+  font-size: 12px;
+  /* align-items: center; */
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5px;
+  /* justify-content: space-between; */
+}
+
+.videoCentered {
+  width: 200px;
+  margin-left: 5px;
+  margin-right: 0px;
+}
+
+.center {
+  width: 70%;
+  min-width: 615px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.videoSet {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.player {
+  /* padding-right: 0px; */
+  margin-right: 20px;
+}
+
+.statusPanel {
+  float: left;
+  margin-left: 20px;
+  /* padding-right: 0px; */
+}
+
+.status {
+  width: 400px;
+  padding-top: 0px;
+  font-family: Monaco;
+  font-size: 16px;
+}
+
+.algorithm {
+  width: 400px;
+  padding-top: 0px;
+  color: #2568d4;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.line-chart-wrapper {
+  display: flex;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  /* border: 1px solid #606060; */
+}
+
+.lineChart {
+  width: 45%;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.two-videos-wrapper {
+  display: flex;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #606060;
+}
+
+.twoVideos {
+  width: 100%;
+  max-width: 610px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rules {
+  width: 100%;
+}
+
+.toCenter {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#toggleButtons button {
+  width: 16%;
+  display: inline-block;
+  text-align: center;
+  font-size: 10pt;
+  font-weight: bolder;
+  background-color: rgb(181, 222, 255);
+  padding: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#guide {
+  width: 70%;
+}
+
+body {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 300;
+  color: #292f33;
+}
+
+.user-guide {
+  width: 60%;
+}
+
+#statusOut {
+  height: auto;
+  max-height: calc((17px * 3) + 19px);
+  overflow: auto;
+}
+
+#errorOut {
+  height: auto;
+  max-height: calc((17px * 3) + 19px);
+  overflow: auto;
+}
+
+#streamURL,
+#streamSelect {
+  /* width: calc(80% - 4px); */
+  margin-left: 3px;
+}
+
+#streamURL {
+  margin-bottom: 10px;
+  padding-left: 3px;
+  display: none;
+}
+
+#streamSelect {
+  padding: 5px 0;
+}
+
+#StreamPermalink {
+  overflow-wrap: break-word;
+  overflow: hidden; /* for IE11 */
+}
+
+#StreamPermalink a {
+  font-size: 10px;
+  font-family: monospace;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #controls {
+    flex-direction: row;
+  }
+
+  .demo-controls-wrapper {
+    max-width: 50%;
+  }
+
+  .config-editor-wrapper {
+    height: auto;
+    border-top: 0;
+    border-left: solid 1px #ccc;
+  }
+}
+
+.footer {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 2rem;
+  background-color: #efefef;
+  text-align: center;
+}
+
